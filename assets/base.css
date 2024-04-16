@@ -2410,7 +2410,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__heading-link .h2 {
   line-height: 1;
-  color: rgba(var(--color-text-on-dark), 1);
+  color:var(--color-text-on-dark);
 }
 
 .header__heading-logo {
@@ -2487,7 +2487,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .header__icon {
-  color: rgb(var(--color-foreground));
+  color: var(--color-text-on-dark);
 }
 
 .header__icon span {

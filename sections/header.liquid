@@ -38,6 +38,14 @@
       }
     }
   {%- endif -%}
+  .header-transparent{
+      position: absolute;
+      top: 0;
+      left: 0;
+       right: 0;
+      z-index: 100;
+      background-color: transparent;
+   }
 
   .menu-drawer-container {
     display: flex;
@@ -71,15 +79,7 @@
     line-height: calc(1 + 0.8 / var(--font-body-scale));
   }
 
-   .header-transparent{
-      position: absolute;
-      top: 0;
-    left: 0;
-  right: 0;
-  z-index: 100;
-  background-color: transparent;
-   }
-
+ 
   @media screen and (min-width: 750px) {
     .list-menu__item--link {
       padding-bottom: 0.5rem;
@@ -428,6 +428,9 @@
   }
 
   customElements.define('sticky-header', StickyHeader);
+
+ 
+​
 {% endjavascript %}
 
 <script type="application/ld+json">
