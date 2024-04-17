@@ -56,6 +56,8 @@
               assign footer_grid_class = 'grid--3-col-tablet'
             elsif section.blocks.size > 6
               assign footer_grid_class = 'grid--4-col-desktop'
+               elsif section.blocks.size > 5
+              assign footer_grid_class = 'grid--5-col-desktop'
             elsif section.blocks.size > 4
               assign footer_grid_class = 'grid--3-col-tablet'
             endif
@@ -68,7 +70,9 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block grid__item
+              {% if block.type == 'link_list' %} footer-block--menu{% endif %}
+              {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
