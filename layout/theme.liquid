@@ -36,6 +36,9 @@
     {%- endif -%}
 
     {{ content_for_header }}
+    {%- if settings.show_breadcrumb_nav -%}
+    {% render "breadcrumbs" %}
+    {%- endif -%}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -299,6 +302,9 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    {%- if settings.show_breadcrumb_nav -%}
+      {% render "breadcrumbs" %}
+    {%- endif -%}
       {{ content_for_layout }}
     </main>
 

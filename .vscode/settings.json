@@ -7,16 +7,6 @@
     "editor.formatOnSave": true
   },
   "[liquid]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "sissel.shopify-liquid"
-  },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true
-  },
-  "hide-files.files": []
+    "editor.formatOnSave": true
+  }
 }
