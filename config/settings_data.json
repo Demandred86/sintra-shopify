@@ -94,7 +94,7 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "brand_image": "shopify://shop_images/logo.jpg",
+    "brand_image": "shopify:\/\/shop_images\/logo.jpg",
     "social_facebook_link": "facebook-link",
     "social_instagram_link": "insta-link",
     "social_youtube_link": "",
@@ -126,7 +126,9 @@
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -176,19 +178,11 @@
         "settings": {
           "background": "#FFFFFF",
           "background_gradient": "",
-          "background-gray": "#F6F6F8ff",
           "text": "#FFFFFF",
-          "text_white": "#FFFFFF",
-          "text_black": "0E0E0Eff",
-          "text_gray": "#AC9DA4ff",
-          "link_active": "#FF4E00ff",
           "button": "#FFFFFF",
           "button_label": "#334FB4",
           "secondary_button_label": "#FFFFFF",
-          "shadow": "#121212",
-          "discount": "#FF4E00ff",
-          "primary_tag": "#FFD78Bff",
-          "secondary_tag": "#56CFE1ff"
+          "shadow": "#121212"
         }
       }
     }
@@ -261,7 +255,9 @@
           }
         }
       },
-      "type_header_font": {"family": "roboto_n4"},
+      "type_header_font": {
+        "family": "roboto_n4"
+      },
       "heading_scale": 100,
       "type_body_font": "roboto_n4",
       "body_scale": 100,
