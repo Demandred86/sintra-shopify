@@ -1486,3 +1486,74 @@ a.product__text {
     border: none;
   }
 }
+.product-form__input input[type=radio]+label.color-swatch{
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  border: 2px solid rgb(var(--color-background));
+  opacity:0.5;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+}
+ 
+.product-form__input input[type=radio]:checked+label.color-swatch{
+    opacity:1;
+}
+ 
+.product-form__input input[type=radio]+label.color-swatch::before{
+  content:"";
+  border: 3px solid rgb(var(--color-background));
+  border-radius:100%;
+  z-index:1;
+  position: absolute;
+  opacity:1;
+  transition: 0.2s ease;
+
+}
+
+ 
+.product-form__input input[type=radio]+label.color-swatch::after{
+    content: "";
+    border: 2px solid grey;
+    border-radius: 100%;
+    z-index: 2;
+    position: absolute;
+    opacity: 1;
+    top: -2px;
+    right: -2px;
+    height: 30px;
+    width: 30px;
+    opacity: 0.5;
+    
+}
+
+.product-form__input input[type=radio]:checked+label.color-swatch::after{
+    border: 2px solid #121212;
+    opacity:0.9;
+    transition: 0.2s ease;
+}
+.product-form__input input[type=radio]+label.color-swatch::after:hover {
+border-color: inherit !important;
+opacity:1;
+
+}
+.product-form__input--pill input[type='radio'] + label:hover {
+  border: 2px solid grey;
+  border-color:grey;
+
+}
+
+.product-form__input--pill input[type='radio'] + label.color-swatch {
+  margin: 0;
+  padding: 0;
+  font-size:1.1rem;
+  margin-right: 1rem;
+}
+
+fieldset.js.product-form__input.product-form__input--pill.swatch-button-flex {
+display:flex;
+}
+  

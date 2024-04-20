@@ -109,6 +109,36 @@
       {{ value -}}
       {{ label_unavailable }}
     </label>
+
+  {%- elsif picker_type == 'swatch-button' -%}
+      <input
+       type="radio"
+      id="{{ input_id }}"
+      name="{{ option.name }}"
+      value="{{ value | escape }}"
+      form="{{ product_form_id }}"
+        {% if option.selected_value == value %}
+          checked
+        {% endif %}
+        {% if option_disabled %}
+          class="disabled, {{value}}-background"
+        {% endif %}
+      >
+      {% if option.name == "Color" %}
+      <label class="color-swatch" for="{{ input_id }}" style="background-image:url({{ value | append: ".png" | file_url }})">
+      </label>
+        {% else if %}
+      <label class="color-swatch" for="{{ input_id }}">
+        <span>{{ value |  slice: 0 |  capitalize}}</span>
+      </label>
+      {% else %}
+
+      <label for="{{ input_id }}">
+     <span>   {{ value -}}</span>
+        {{ label_unavailable }}
+      </label>    
+      {% endif %}
+      
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
       value="{{ value | escape }}"

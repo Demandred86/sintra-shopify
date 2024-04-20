@@ -57,6 +57,22 @@
             picker_type: picker_type
           %}
         </fieldset>
+      {%- elsif picker_type == 'swatch-button' -%}
+        <fieldset class="js product-form__input product-form__input--pill swatch-button-flex">
+          <legend style="font-weight:600" class="form__label ">
+            {{ option.name | upcase}}:
+            <span style="font-weight:600" data-selected-swatch-value="{{ option.name }}">
+              {{- option.selected_value -}}
+            </span>
+          </legend>
+
+          {% render 'product-variant-options',
+            product: product,
+            option: option,
+            block: block,
+            picker_type: picker_type
+          %}
+        </fieldset>
       {%- else -%}
         <div class="product-form__input product-form__input--dropdown">
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
