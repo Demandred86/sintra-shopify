@@ -3442,3 +3442,12 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+.add_to_cart_button {
+    background: rgb(var(--color-secondary-button));
+    border: 1px solid transparent;
+    max-width: 20rem;
+    border-radius: 25px 25px 25px 25px;
+    text-transform: uppercase;
+    color: rgb(var(--color-secondary-button-text));
+    font-weight: 600;
+}

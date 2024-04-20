@@ -36,7 +36,8 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": true,
+            "color_scheme": "scheme-5"
           }
         },
         "description": {
@@ -143,7 +144,7 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-5",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -185,7 +186,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-5",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -198,7 +199,7 @@
         "heading": "You may also like",
         "heading_size": "h2",
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-5",
         "image_ratio": "square",
         "show_secondary_image": true,
         "show_vendor": false,
