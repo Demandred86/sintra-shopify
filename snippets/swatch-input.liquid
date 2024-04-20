@@ -24,6 +24,9 @@
     %}
 {% endcomment %}
 
+
+{% if option.name == "Color" %}
+  
 <input
   type="{{ type | default: 'radio' }}"
   id="{{ id }}"
@@ -38,6 +41,24 @@
     disabled
   {% endif %}
 >
+{% else %}
+  
+<input
+  type="{{ type | default: 'radio' }}"
+  id="{{ id }}"
+  name="{{ name }}"
+  value="{{ value }}"
+  form="{{ product_form_id }}"
+  class="swatch-input__input{% if visually_disabled %} visually-disabled{% endif %}"
+    style=" background-image:url({{ value  | append: '.png' |  file_img_url}})"
+  {% if checked %}
+    checked
+  {% endif %}
+  {% if disabled %}
+    disabled
+  {% endif %}
+>
+{% endif %}
 <label
   for="{{ id }}"
   title="{{ value }}"
