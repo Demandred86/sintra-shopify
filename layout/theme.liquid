@@ -36,9 +36,7 @@
     {%- endif -%}
 
     {{ content_for_header }}
-    {%- if settings.show_breadcrumb_nav -%}
-    {% render "breadcrumbs" %}
-    {%- endif -%}
+ 
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -79,7 +77,6 @@
         %}
 
         
-        --color-text-on-dark: rgba(255,255,255, 1);      
         --color-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
         --color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
         --color-shadow: {{ scheme.settings.shadow.red }},{{ scheme.settings.shadow.green }},{{ scheme.settings.shadow.blue }};
@@ -302,9 +299,12 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    
+    <div class="breadcrumbs-container">
     {%- if settings.show_breadcrumb_nav -%}
       {% render "breadcrumbs" %}
     {%- endif -%}
+    </div>
       {{ content_for_layout }}
     </main>
 
