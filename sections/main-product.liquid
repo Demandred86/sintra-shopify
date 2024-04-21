@@ -663,10 +663,11 @@
 {%- endfor -%}
 </div>
 
+{% render 'logo-bar' %}
+
 
 {%- for block in section.blocks -%}
   {%- case block.type -%}
-
  {%- when 'collapsible_tab' -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
@@ -919,6 +920,28 @@
       "type": "quantity_selector",
       "name": "t:sections.main-product.blocks.quantity_selector.name",
       "limit": 1
+    },
+    {
+      "type":"logo_list",
+       "name": "Logo List Section",
+      "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Our Logos"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Logo Image 1"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "Link for Logo 1"
+    }
+  ]
     },
     {
       "type": "variant_picker",
@@ -2327,4 +2350,8 @@
     }
   ]
 }
+
+ 
+
+
 {% endschema %}
