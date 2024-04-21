@@ -1562,6 +1562,7 @@ display:flex;
 /* Add to Cart Button */
   button.add-to-cart-button.product-form__submit.button.button--full-width.button--secondary::before{
     background-color: var(--color-button);
-
-
   }
+    button.add-to-cart-button.product-form__submit.button.button--full-width.button--secondary::before span{
+    color:brown;
+    }
