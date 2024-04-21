@@ -7,7 +7,8 @@
     "editor.formatOnSave": true
   },
   "[liquid]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "sissel.shopify-liquid"
   },
   "files.exclude": {
     "**/.git": true,

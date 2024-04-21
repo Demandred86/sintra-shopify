@@ -188,6 +188,10 @@ h1,
   border: none;
 }
 
+.product-form__input.product-form__quantity {
+  flex: 1 1 100%;
+}
+
 .product-form__input .form__label {
   padding-left: 0;
 }
@@ -1566,3 +1570,15 @@ display:flex;
     button.add-to-cart-button.product-form__submit.button.button--full-width.button--secondary::before span{
     color:brown;
     }
+
+    .price-button-container {
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+    }
+
+.price-container{
+  display:flex;
+  flex-direction: column-reverse;
+}    
