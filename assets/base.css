@@ -3552,3 +3552,20 @@ details-disclosure > details {
   display: flex;
   flex-direction: column;
 }
+
+
+
+.image-container {
+    display: grid;
+
+}
+.image-container img {
+    width:100%;
+
+}
+
+.grid-item-1 { grid-area: 3 / 3 / 7 / 7; }
+.grid-item-2 { grid-area: 3 / 1 / 5 / 3; }
+.grid-item-3 { grid-area: 5 / 1 / 7 / 3; }
+.grid-item-4 { grid-area: 7 / 1 / 9 / 3; }
+.grid-item-5 { grid-area: 6 / 5 / 3 / -1; }
