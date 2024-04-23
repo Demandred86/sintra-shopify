@@ -44,11 +44,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "logo-bar":{
-          "type":"logo-bar",
-          "settings":{
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -154,6 +149,8 @@
         "image-with-text-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Gray.png",
+        "secondaryimage": "shopify:\/\/shop_images\/Pink.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
