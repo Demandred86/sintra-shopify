@@ -15,14 +15,6 @@
             "text_style": "subtitle"
           }
         },
-        "logo_list_dTcRW9": {
-          "type": "logo_list",
-          "settings": {
-            "title": "Our Logos",
-            "image_1": "shopify:\/\/shop_images\/Pink.png",
-            "link_1": ""
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -93,12 +85,19 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "logo_list_dTcRW9": {
+          "type": "logo_list",
+          "settings": {
+            "title": "Our Logos",
+            "image_1": "shopify:\/\/shop_images\/Pink.png",
+            "link_1": ""
+          }
         }
       },
       "block_order": [
         "title",
         "caption",
-        "logo_list_dTcRW9",
         "price",
         "description",
         "variant_picker",
@@ -108,7 +107,8 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "logo_list_dTcRW9"
       ],
       "settings": {
         "enable_sticky_info": true,
