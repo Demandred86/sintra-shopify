@@ -44,6 +44,11 @@
             "show_gift_card_recipient": true
           }
         },
+        "logo-bar":{
+          "type":"logo-bar",
+          "settings":{
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
