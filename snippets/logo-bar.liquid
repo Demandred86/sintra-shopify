@@ -39,7 +39,7 @@
     {%- assign link = "link_" | append: i -%}
     {%- assign image_url = section.settings[image] -%}
     {%- assign link_url = section.settings[link] -%}
-
+{{  section.settings[image] }}
     {%- if image_url != blank -%}
       <div class="logo-bar__item">
         <a href="{{ link_url }}" class="logo-bar__link">

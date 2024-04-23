@@ -655,12 +655,12 @@
                 -%}
 {% render "wishlist" %}
 
-
+ {%- when 'logo_bar' -%}
+{% render 'logo-bar' %}
 {%- endcase -%}
 {%- endfor -%}
 </div>
 
-{% render 'logo-bar' %}
 
 
 {%- for block in section.blocks -%}
