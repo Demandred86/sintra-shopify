@@ -11,22 +11,15 @@
 {% endcomment %}
 
   <style type="text/css">
-   
-    .logo-bar {
-      flex-shrink: 1;
+      .logo-bar img {
+        width:100%;
+        height: auto;
     }
-    .logo-bar img {
-width:100%;
-     height: auto;
-}
 
   </style>
-
-<div class="logo-bar">
     {%- assign image_url =  media |  image_url -%}
     {%- if image_url != blank -%}
           <img src="{{ image_url }}" alt="{{media.alt}}" class="logo_image"><img>
     {%- endif -%}
-</div>
 
 
