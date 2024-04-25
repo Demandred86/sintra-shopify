@@ -44,25 +44,13 @@
             "show_gift_card_recipient": true
           }
         },
-        "logo-bar":{
-          "type":"logo_image",
-          "settings":{
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
+        "logo_image_H4JAAG": {
+          "type": "logo_image",
           "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "image_1": "shopify:\/\/shop_images\/McAfee_SECURE.svg",
+            "image_2": "shopify:\/\/shop_images\/VeriSign.svg",
+            "image_3": "shopify:\/\/shop_images\/McAfee_SECURE.svg",
+            "image_4": "shopify:\/\/shop_images\/VeriSign.svg"
           }
         }
       },
@@ -74,10 +62,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "logo_image",
-        "collapsible-row-0",
-    
-        "share"
+        "logo_image_H4JAAG"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -92,7 +77,8 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "logo_number": 4
       }
     },
     "image-with-text": {
@@ -119,7 +105,6 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Gray.png",
-        "secondaryimage": "shopify:\/\/shop_images\/Pink.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
