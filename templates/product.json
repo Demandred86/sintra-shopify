@@ -118,6 +118,8 @@
         "image-with-text-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Gray.png",
+        "secondaryimage": "shopify:\/\/shop_images\/Pink.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
