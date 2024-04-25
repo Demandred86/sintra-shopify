@@ -10,16 +10,23 @@
 
 {% endcomment %}
 
-  <style type="text/css">
-      .logo-bar img {
-        width:100%;
-        height: auto;
-    }
+<style>
 
-  </style>
+  
+  .flex-item {
+    flex: 0 0 auto; 
+    max-width: 100%;
+  }
+  
+  .flex-item img {
+    width: 100%; 
+    height: auto;
+    display: block;
+  }
+</style>
     {%- assign image_url =  media |  image_url -%}
     {%- if image_url != blank -%}
-          <img src="{{ image_url }}" alt="{{media.alt}}" class="logo_image"><img>
+        <div class="flex-item"> <img src="{{ image_url }}" alt="{{media.alt}}" class="logo_image"><img></div> 
     {%- endif -%}
 
 
