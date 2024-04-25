@@ -655,12 +655,24 @@
                 -%}
 {% render "wishlist" %}
 
- {%- when 'logo_bar' -%}
-{% render 'logo-bar' %}
+   
 {%- endcase -%}
 {%- endfor -%}
 </div>
 
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+ {%- when 'logo_image' -%}
+
+  <div class="flex flex-row">
+ {% render 'logo-bar', { media: block.settings.image_1}%}
+    {% render 'logo-bar', { media: block.settings.image_2}%}
+    {% render 'logo-bar', { media: block.settings.image_3}%}
+    {% render 'logo-bar', { media: block.settings.image_4}%}
+</div>
+  {%- endcase -%}
+{%- endfor -%}
 
 
 {%- for block in section.blocks -%}
@@ -919,28 +931,6 @@
       "limit": 1
     },
     {
-      "type":"logo_list",
-       "name": "Logo List Section",
-      "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Section Title",
-      "default": "Our Logos"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_1",
-      "label": "Logo Image 1"
-    },
-    {
-      "type": "url",
-      "id": "link_1",
-      "label": "Link for Logo 1"
-    }
-  ]
-    },
-    {
       "type": "variant_picker",
       "name": "t:sections.main-product.blocks.variant_picker.name",
       "limit": 1,
@@ -1005,17 +995,30 @@
         }
       ]
     },
-{
-  "type":"logo_bar",
-  "name":"choose logos",
+  {
+  "type":"logo_image",
+  "name":"Logo",
   "settings":[
       {
-        "type": "image_picker",
+      "type": "image_picker",
       "id": "image_1",
       "label": "Logo Image 1"
+    },  {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Logo Image 2"
+    },
+      {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Logo Image 3"
+    },
+      {
+      "type": "image_picker",
+      "id": "image_",
+      "label": "Logo Image "
     }
   ]
-
 },
 
 
@@ -2262,7 +2265,7 @@
           "label": "t:sections.main-product.settings.gallery_layout.options__4.label"
         }
       ],
-      "default": "stacked",
+      "default": "columns",
       "label": "t:sections.main-product.settings.gallery_layout.label"
     },
     {
@@ -2358,6 +2361,14 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {"type": "range",
+      "id":"logo_number",
+      "min": 1,
+      "max": 5,
+      "step":1,
+      "label": "Logos",
+      "default":4
     }
   ]
 }

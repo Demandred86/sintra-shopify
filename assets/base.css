@@ -3540,6 +3540,13 @@ details-disclosure > details {
   font-weight: 600;
 }
 
+.flex {
+  display: flex;
+}
+.flex-row {
+  display: flex;
+}
+
 .gallery-wrapper {
   display: flex;
   flex-direction: row-reverse;

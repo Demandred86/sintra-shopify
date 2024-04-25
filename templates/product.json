@@ -45,7 +45,7 @@
           }
         },
         "logo-bar":{
-          "type":"logo-bar",
+          "type":"logo_image",
           "settings":{
           }
         },
@@ -57,46 +57,12 @@
             "content": "",
             "page": ""
           }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
+        
         },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "logo_list_dTcRW9": {
-          "type": "logo_list",
-          "settings": {
-            "title": "Our Logos",
-            "image_1": "shopify:\/\/shop_images\/Pink.png",
-            "link_1": ""
           }
         }
       },
@@ -108,12 +74,10 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "logo_image",
         "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share",
-        "logo_list_dTcRW9"
+    
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,

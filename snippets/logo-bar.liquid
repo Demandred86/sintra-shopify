@@ -1,53 +1,32 @@
 {% comment %}
   Name: Logo List Section Snippet
   Description: Custom snippet for rendering a list of logos.
+
+  Accepts:
+    - media: {Object} Product Media object
+
+        Usage:
+    {% render 'logo-bar', media: media %}
+
 {% endcomment %}
 
   <style type="text/css">
-    .logo-list__header {
-      text-align: center;
-    }
+   
     .logo-bar {
-      text-align: center;
-      margin-bottom: 30px;
+      flex-shrink: 1;
     }
-    .logo-bar__item {
-      display: inline-block;
-      vertical-align: middle;
-      max-width: 160px;
-      margin: 0 20px 20px;
-    }
-    .logo-bar__image {
-      display: block;
-      margin: 0 auto;
-    }
-    .logo-bar__link {
-      display: block;
-      text-decoration: none;
-    }
+    .logo-bar img {
+width:100%;
+     height: auto;
+}
+
   </style>
 
-<div class="logo-list">
-  {%- if section.settings.title != blank -%}
-    <div class="logo-list__header">
-      <h2>{{ section.settings.title | escape }}</h2>
-    </div>
-  {%- endif -%}
-
-  {%- for i in (1..20) -%}
-    {%- assign image = "image_" | append: i -%}
-    {%- assign link = "link_" | append: i -%}
-    {%- assign image_url = section.settings[image] -%}
-    {%- assign link_url = section.settings[link] -%}
-{{  section.settings[image] }}
+<div class="logo-bar">
+    {%- assign image_url =  media |  image_url -%}
     {%- if image_url != blank -%}
-      <div class="logo-bar__item">
-        <a href="{{ link_url }}" class="logo-bar__link">
-          <img src="{{ image_url }}" alt="Logo {{ i }}" class="logo-bar__image">
-        </a>
-      </div>
+          <img src="{{ image_url }}" alt="{{media.alt}}" class="logo_image"><img>
     {%- endif -%}
-  {%- endfor -%}
 </div>
 
 
