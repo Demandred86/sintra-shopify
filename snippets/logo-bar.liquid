@@ -24,9 +24,13 @@
     display: block;
   }
 </style>
-    {%- assign image_url =  media |  image_url -%}
-    {%- if image_url != blank -%}
-        <div class="flex-item"> <img src="{{ image_url }}" alt="{{media.alt}}" class="logo_image"><img></div> 
+    {%- assign logo =  media 
+    | image_url: width: 400 
+    | image_tag: style: "height: 100px; object-fit: cover;" 
+    -%}
+    {%- if logo != blank -%}
+        <div class="flex-item logo-bar-snippet"> 
+          {{logo }}
     {%- endif -%}
 
 

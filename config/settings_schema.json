@@ -8,18 +8,6 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
-    "name": "Wishlist",
-    "settings": [
-     
-      {
-        "type": "checkbox",
-        "id": "enable-wishlist",
-        "label": "Enable Wishlist",
-        "default": true
-      }
-    ]
-  },
-  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
@@ -74,7 +62,7 @@
             "type": "color",
             "id": "button",
             "label": "t:settings_schema.colors.settings.button_background.label",
-            "default": "#56CFE1ff"
+            "default": "#121212"
           },
           {
             "type": "color",
@@ -86,13 +74,13 @@
             "type": "color",
             "id": "secondary_button",
             "label": "t:settings_schema.colors.settings.secondary_button.label",
-            "default": "#56CFE1ff"
+            "default": "#FFFFFF"
           },
           {
             "type": "color",
             "id": "secondary_button_label",
             "label": "t:settings_schema.colors.settings.secondary_button_label.label",
-            "default": "#FFFFFF"
+            "default": "#121212"
           },
           {
             "type": "color",

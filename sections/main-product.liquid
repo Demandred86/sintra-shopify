@@ -666,10 +666,7 @@
  {%- when 'logo_image' -%}
 
   <div class="flex flex-row">
- {% render 'logo-bar', { media: block.settings.image_1}%}
-    {% render 'logo-bar', { media: block.settings.image_2}%}
-    {% render 'logo-bar', { media: block.settings.image_3}%}
-    {% render 'logo-bar', { media: block.settings.image_4}%}
+ {% render 'logo-bar', { media: block.settings.image}%}
 </div>
   {%- endcase -%}
 {%- endfor -%}
@@ -1001,22 +998,8 @@
   "settings":[
       {
       "type": "image_picker",
-      "id": "image_1",
-      "label": "Logo Image 1"
-    },  {
-      "type": "image_picker",
-      "id": "image_2",
-      "label": "Logo Image 2"
-    },
-      {
-      "type": "image_picker",
-      "id": "image_3",
-      "label": "Logo Image 3"
-    },
-      {
-      "type": "image_picker",
-      "id": "image_4",
-      "label": "Logo Image "
+      "id": "image",
+      "label": "Logo Image"
     }
   ]
 },
