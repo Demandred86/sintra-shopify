@@ -56,23 +56,26 @@
           "settings": {
             "collection": "dress",
             "position": "top-left",
-            "collection-title": "explorer"
+            "collection-title": "explorer",
+            "color_scheme": "light"
           }
         },
         "featured_collection_HmnX9d": {
           "type": "featured_collection",
           "settings": {
             "collection": "denim",
-            "position": "bottom-right",
-            "collection-title": "view collections"
+            "position": "top-left",
+            "collection-title": "view collections",
+            "color_scheme": "dark"
           }
         },
         "featured_collection_iBB98G": {
           "type": "featured_collection",
           "settings": {
             "collection": "new-arrivals",
-            "position": "top-left",
-            "collection-title": "shop now"
+            "position": "bottom-right",
+            "collection-title": "shop now",
+            "color_scheme": ""
           }
         }
       },

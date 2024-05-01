@@ -74,6 +74,25 @@
   background: transparent;
 }
 
+.card__content.color-dark h2,
+.card__content.color-dark h3 {
+  color: #121212;
+}
+
+.card__content.color-light h2,
+.card__content.color-light h3 {
+  color: #ffffff;
+}
+
+.card__content h2 {
+  font-size: 27px;
+}
+
+.card__content h3 {
+  font-size: 16px;
+}
+
+.card__inner.color-scheme
 .card .card__inner .card__media {
   overflow: hidden;
   /* Fix for Safari border bug on hover */

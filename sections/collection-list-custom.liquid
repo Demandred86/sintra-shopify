@@ -79,7 +79,8 @@
               columns: columns,
               placeholder_image: placeholder_image,
               textPosition: block.settings.position,
-              title: block.settings.collection-title
+              title: block.settings.collection-title,
+              colorScheme: block.settings.color_scheme
 
             %}
           </li>
@@ -300,8 +301,23 @@
           "type": "text",
           "id" :  "collection-title",
           "label": "Title"
+        },
+        {
+        "type": "select",
+        "id": "color_scheme",
+        "label": "Text color",
+        "options": [
+        {
+        "value": "light",
+        "label": "Light"
+        },
+        {
+        "value": "dark",
+        "label": "Dark"
+          }
+        ],
+        "default": "dark"
         }
-        
       ]
     }
   ],
