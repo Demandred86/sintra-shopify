@@ -94,7 +94,7 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "brand_image": "shopify://shop_images/logo.jpg",
+    "brand_image": "shopify:\/\/shop_images\/logo.jpg",
     "social_facebook_link": "facebook-link",
     "social_instagram_link": "insta-link",
     "social_youtube_link": "",
@@ -205,7 +205,8 @@
             "secondary_button": "#fff5a4",
             "button_label": "#FFFFFF",
             "secondary_button_label": "#121212",
-            "shadow": "#121212"
+            "shadow": "#121212",
+            "sale_color": "#FF0000"
           }
         },
         "scheme-2": {
@@ -217,7 +218,8 @@
             "secondary_button": "#fff5a4",
             "button_label": "#F3F3F3",
             "secondary_button_label": "#121212",
-            "shadow": "#121212"
+            "shadow": "#121212",
+            "sale_color": "#FF0000"
           }
         },
         "scheme-3": {
@@ -229,7 +231,8 @@
             "secondary_button": "#fff5a4",
             "button_label": "#000000",
             "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
+            "shadow": "#121212",
+            "sale_color": "#FF0000"
           }
         },
         "scheme-4": {
@@ -241,7 +244,8 @@
             "secondary_button": "#fff5a4",
             "button_label": "#121212",
             "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
+            "shadow": "#121212",
+            "sale_color": "#FF0000"
           }
         },
         "scheme-5": {
@@ -261,7 +265,8 @@
             "shadow": "#121212",
             "discount": "#FF4E00ff",
             "primary_tag": "#FFD78Bff",
-            "secondary_tag": "#56CFE1ff"
+            "secondary_tag": "#56CFE1ff",
+            "sale_color": "#FF0000"
           }
         }
       },
