@@ -2612,7 +2612,7 @@ menu-drawer + .header__search {
 
   .header:not(.header--top-center) > .header__search,
   .header--top-center * > .header__search {
-    display: none;
+    display: inline-flex;
   }
 }
 
