@@ -30,7 +30,7 @@
     content: "";
     border-bottom: 3px solid #fff;
     display: block;
-    width: 35%;
+    width: 100px;
     display: block;
     margin: auto;
     margin-top: 1rem;
@@ -156,8 +156,8 @@
                   {% endif %}
                   class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
                 >
-                  {{- block.settings.button_label_1 | escape -}}
-                </a>
+                  {{- block.settings.button_label_1 | escape |  append: ' '-}} 
+  <span class="icon-wrap">{% render 'icon-arrow' %}</span>                </a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
                 <a

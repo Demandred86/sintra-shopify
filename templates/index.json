@@ -20,7 +20,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "shop now ->",
+            "button_label_1": "shop now",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -114,7 +114,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-2",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -151,14 +151,14 @@
         "heading_YQk6Nx": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails",
+            "heading": "subscribe to our newsletter",
             "heading_size": "h1"
           }
         },
         "paragraph_XkbNDf": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Sing up for our newsletter to be updated on the latest designs, exclulsinve offers, inspiration and tips!<\/p>"
           }
         },
         "email_form_TiLYTp": {
@@ -173,7 +173,7 @@
         "email_form_TiLYTp"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
