@@ -20,7 +20,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "shop now",
+            "button_label_1": "shop now ->",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -178,6 +178,51 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "info_banner_BgbHgF": {
+      "type": "info-banner",
+      "blocks": {
+        "info_banner_RgbLze": {
+          "type": "info_banner",
+          "settings": {
+            "icon": "plane",
+            "title": "Free Shipping",
+            "subtitle": "Free shipping for all US orders"
+          }
+        },
+        "info_banner_NX4hET": {
+          "type": "info_banner",
+          "settings": {
+            "icon": "serving_dish",
+            "title": "Support 24\/7",
+            "subtitle": "we support 24 hours a day"
+          }
+        },
+        "info_banner_iVTGxQ": {
+          "type": "info_banner",
+          "settings": {
+            "icon": "return",
+            "title": "30 days return",
+            "subtitle": "you have 30 days to return"
+          }
+        },
+        "info_banner_kJ3Xmc": {
+          "type": "info_banner",
+          "settings": {
+            "icon": "star",
+            "title": "Payment 100% secure",
+            "subtitle": "Payment 100% secure"
+          }
+        }
+      },
+      "block_order": [
+        "info_banner_RgbLze",
+        "info_banner_NX4hET",
+        "info_banner_iVTGxQ",
+        "info_banner_kJ3Xmc"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -185,6 +230,7 @@
     "collection_list_custom_rr9C8x",
     "featured_collection_ML89mh",
     "featured_blog_custom_htFDBp",
-    "newsletter_tbfE7C"
+    "newsletter_tbfE7C",
+    "info_banner_BgbHgF"
   ]
 }
