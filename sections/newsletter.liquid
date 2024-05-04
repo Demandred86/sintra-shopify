@@ -54,12 +54,14 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div class="field">
-                  <input
+                <div class="newsletter__field">
+                 
+                <div class="input-wrapper">
+                <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input"
+                    class="newsletter-input"
                     value="{{ form.email }}"
                     aria-required="true"
                     autocorrect="off"
@@ -78,13 +80,15 @@
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
                   </label>
+                  </div>
                   <button
                     type="submit"
-                    class="newsletter-form__button field__button"
                     name="commit"
                     id="Subscribe"
                     aria-label="{{ 'newsletter.button_label' | t }}"
+                    class="newsletter-button"
                   >
+                  Subscribe 
                     {% render 'icon-arrow' %}
                   </button>
                 </div>
