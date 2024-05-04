@@ -2,6 +2,52 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "info_banner_kyp6kg": {
+      "type": "info-banner",
+      "blocks": {
+        "info_banner_JYpFet": {
+          "type": "info_banner",
+          "settings": {
+            "icon": "plane",
+            "title": "Free Shipping",
+            "subtitle": "Free shipping for all US orders"
+          }
+        },
+        "info_banner_NgzyKa": {
+          "type": "info_banner",
+          "settings": {
+            "icon": "serving_dish",
+            "title": "Support 24\/7",
+            "subtitle": "we support 24 hours a day"
+          }
+        },
+        "info_banner_NLeMqb": {
+          "type": "info_banner",
+          "settings": {
+            "icon": "return",
+            "title": "30 days return",
+            "subtitle": "you have 30 days to return"
+          }
+        },
+        "info_banner_YKymbE": {
+          "type": "info_banner",
+          "settings": {
+            "icon": "star",
+            "title": "Payment 100% secure",
+            "subtitle": "Payment 100% secure"
+          }
+        }
+      },
+      "block_order": [
+        "info_banner_JYpFet",
+        "info_banner_NgzyKa",
+        "info_banner_NLeMqb",
+        "info_banner_YKymbE"
+      ],
+      "settings": {
+        "color_scheme": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -49,6 +95,7 @@
     }
   },
   "order": [
+    "info_banner_kyp6kg",
     "footer"
   ]
 }
