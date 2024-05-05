@@ -1,0 +1,58 @@
+{% style %}
+
+  .inline-menu {
+    display: flex;
+    justify-content: space-between;
+    padding:0 3rem;
+    margin-bottom:2rem;
+  }
+
+  .copyright p {
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 992px) {
+    .inline-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+{% endstyle %}
+
+<div class="inline-menu color-{{ section.settings.color_scheme }}">
+  <div class="copyright">
+    <p>
+      Copyright 2022 -  All Rights Reserved</p>
+  </div>
+
+  <div class="menu">
+    {%- render 'header-mega-menu' %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Inline Menu",
+    "class": "section-header",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "menu",
+        "default": "main-menu",
+        "label": "Select menu"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      }
+    ],
+    "presets": [
+      {
+        "name": "footer inline menu"
+      }
+    ]
+  }
+{% endschema %}

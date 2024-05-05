@@ -51,6 +51,18 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "icon_with_text_Ff334y": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "map_pin",
+            "heading_1": "184 Main Rd E, St Albans VIC 3021, Australia",
+            "icon_2": "chat_bubble",
+            "heading_2": "contact@company.com",
+            "icon_3": "silhouette",
+            "heading_3": "+001 2233 456"
+          }
+        },
         "footer-0": {
           "type": "link_list",
           "settings": {
@@ -71,31 +83,51 @@
             "heading": "Useful Links",
             "menu": "useful-links"
           }
+        },
+        "instagram_feed_WQGTpC": {
+          "type": "instagram_feed",
+          "settings": {
+            "heading": "Instagram",
+            "image_1": "shopify:\/\/shop_images\/putting-on-your-shoes_925x_76a07460-ab2b-4690-aa8f-e3619f8ee9d1.jpg",
+            "image_2": "shopify:\/\/shop_images\/woman-in-the-city_925x_81b8ca1d-1533-42c7-aebb-0ba63128383d.jpg",
+            "image_3": "shopify:\/\/shop_images\/womens-red-t-shirt_925x_db1967a9-0a39-4623-b2a8-1a4b6d137016.jpg",
+            "image_4": "shopify:\/\/shop_images\/menswear-blue-zip-up-jacket_925x_b776bbec-8f67-4223-a11f-89d1a2c2b677.jpg",
+            "image_5": "shopify:\/\/shop_images\/smiling-woman-poses_925x_8b244dbd-bd71-4baf-a250-4312293eda17.jpg",
+            "image_6": "shopify:\/\/shop_images\/woman-outside-brownstone_925x_99ebebaa-d242-40e1-8146-27824165016e.jpg"
+          }
         }
       },
       "block_order": [
+        "icon_with_text_Ff334y",
         "footer-0",
         "footer-1",
-        "link_list_znTknU"
+        "link_list_znTknU",
+        "instagram_feed_WQGTpC"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails and get 10% off your first purchase",
+        "color_scheme": "scheme-2",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
+        "payment_enable": false,
         "show_policy": false,
         "margin_top": 48,
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "inline_menu_Yp67LB": {
+      "type": "inline-menu",
+      "settings": {
+        "menu": "footer-inline-menu",
+        "color_scheme": ""
+      }
     }
   },
   "order": [
     "info_banner_kyp6kg",
-    "footer"
+    "footer",
+    "inline_menu_Yp67LB"
   ]
 }

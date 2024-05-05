@@ -10,6 +10,30 @@
     block: block
   %}
 {% endcomment %}
+
+
+{%- style -%}
+
+.icon-with-text {
+  display: flex;
+  margin:2rem 0;
+  padding: 0;
+  flex:1;
+  flex-direction:column;
+  gap: 1.5rem;
+}
+
+.icon-with-text .icon-with-text__item {
+  display: flex;
+  align-items: start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+{%- endstyle -%}
+
 {%- liquid
   assign heading_1_empty = false
   assign heading_2_empty = false

@@ -28,7 +28,7 @@
 .newsletter__wrapper .input-wrapper {
   position: relative;
   display: flex;
-  max-width: 1200px;
+  max-width: 500px;
   flex-grow: 1;
 }
 

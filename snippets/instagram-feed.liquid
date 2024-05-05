@@ -1,0 +1,49 @@
+{% comment %} 
+  Renders Instagram feed block
+
+  Accepts:
+  - block: {Object} passes in the block information.
+
+  Usage:
+  {% render 'instagram-feed',
+    block: block
+  %}
+ {% endcomment %}
+
+{%- style -%}
+
+  .footer-block__instagram-feed {
+    margin-bottom: 20px;
+  }
+
+  .footer-block__instagram-feed-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-block__instagram-feed-images img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  }
+
+  
+
+{%- endstyle -%}
+
+
+<div class="footer-block__instagram-feed">
+  <div class="footer-block__instagram-feed-images">
+    {%- for i in (1..6) -%}
+      {%- assign currentImage = "image_" | append: i -%}
+      {%- capture image_variable -%}
+        {%- assign image = block.settings[currentImage] -%}
+      {%- endcapture -%}
+      
+      {% if image %}
+        {{ image | img_tag: 'alt:Image' }}
+      {% endif %}
+    {%- endfor -%}
+  </div>
+</div>
