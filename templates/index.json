@@ -73,9 +73,9 @@
           "type": "featured_collection",
           "settings": {
             "collection": "new-arrivals",
-            "position": "bottom-right",
+            "position": "top-right",
             "collection-title": "shop now",
-            "color_scheme": ""
+            "color_scheme": "light"
           }
         }
       },
