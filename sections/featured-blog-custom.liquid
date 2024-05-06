@@ -13,8 +13,18 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+  }
+
+  @media screen and (min-width: 990px) {
+    .section-{{ section.id }}-padding {
+      padding-right: calc( (100vw) / 7);
+      padding-left: calc( (100vw) / 7);
     }
   }
+
+
+
 {%- endstyle -%}
 
 {%- liquid
@@ -90,7 +100,7 @@
               {% render 'article-card-custom',
                 blog: section.settings.blog,
                 article: article,
-                media_aspect_ratio: 1.66,
+                media_aspect_ratio: 1.4,
                 show_image: section.settings.show_image,
                 show_date: section.settings.show_date,
                 show_author: section.settings.show_author,

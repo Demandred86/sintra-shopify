@@ -2064,6 +2064,7 @@ product-info .loading__spinner:not(.hidden)~*,
   bottom: 0.8rem;
   left: 2.2rem;
   line-height: calc(1 + 0.1 / var(--font-body-scale));
+  top: 0;
 }
 
 /* utility-bar */
@@ -2486,7 +2487,6 @@ product-info .loading__spinner:not(.hidden)~*,
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 0.8rem;
 }
 
 .header__icons .shopify-app-block {
@@ -2523,7 +2523,7 @@ product-info .loading__spinner:not(.hidden)~*,
   height: 2rem;
   width: 2rem;
   fill: none;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .header__icon,
@@ -3515,5 +3515,5 @@ details-disclosure>details {
 }
 
 svg path {
-  stroke-width: 2px;
+  stroke-width: 1px;
 }
