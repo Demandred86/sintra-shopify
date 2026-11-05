@@ -666,7 +666,7 @@
  {%- when 'logo_image' -%}
 
   <div class="flex flex-row">
- {% render 'logo-bar', { media: block.settings.image}%}
+ {% render 'logo-bar', media: block.settings.image %}
 </div>
   {%- endcase -%}
 {%- endfor -%}
@@ -2360,3 +2360,13 @@
 
 
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'logo-bar', { media: block.settings.image}%}"
+  to: "{% render 'logo-bar', media: block.settings.image %}"
+  position: 37321..37373
+{% endcomment %}
